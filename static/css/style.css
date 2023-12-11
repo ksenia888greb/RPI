@@ -1,0 +1,143 @@
+body {
+    font: 20pt 'Spectral', serif; /* Шрифт на веб-странице */
+    background: #ffdfdf; /* Цвет фона */
+    margin: 0; /* Убираем отступы */
+    font-style: italic;
+}
+
+h2 {
+    font-size: 30pt; /* Размер шрифта */
+    color: #7e0000; /* Цвет текста */
+    margin-bottom: 0; /* Отступ снизу */
+}
+
+#container {
+    width: 900px; /* Ширина макета */
+    margin: 0 auto; /* Выравниваем по центру */
+    text-align: center;
+    color: black;
+}
+#headers {
+    letter-spacing: 0.7px;
+    font-style: italic;
+    color: #000000;
+}
+#header1 {
+    font-family: 'Spectral', serif;
+    font-size: 40pt; /* Размер текста */
+    padding: 20px; /* Отступы вокруг текста */
+    font-weight: 700;
+}
+#header2 {
+    font-family: 'Spectral', serif;
+    font-size: 25pt; /* Размер текста */
+    padding: 10px; /* Отступы вокруг текста */
+    border-bottom: 3px solid #121212;
+}
+
+#content {
+    background: #fff;
+    border: 3px solid #7e0000;
+    color: black;
+    padding: 10px; /* Поля вокруг текста */
+    margin-top: 230px;
+    font-size: 25pt;
+    text-align: center;
+    width: 900px;
+    margin-left: 300px;
+}
+#banner {
+    background: url(../images/heading-bg.jpg);
+    padding-left: 20px;
+    color: #7e0000;
+    font-size: 40pt;
+}
+#sidebar {
+    margin-top: 50px;
+    border: 3px solid #7e0000;
+    width: 150px; /* Ширина правой колонки */
+    padding: 9px; /* Отступы вокруг текста */
+    background: #fff; /* Цвет фона */
+}
+
+    #sidebar a {
+        color: #752641; /* Цвет ссылок */
+    }
+
+#footer {
+    background: #7e0000; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 10px; /* Отступы вокруг текста */
+    margin-top: 15px; /* Отступ сверху */
+}
+#nav {
+    float: left;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 15px;
+}
+#nav li {
+    float: left;
+    margin-right: 15px;
+    margin-top: 3px;
+    position: relative;
+    display: block;
+}
+#nav li a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+    transition: .4s background;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+#nav li a:hover {
+    color: #fff;
+    background: #ffcc00;
+    background: rgba(255, 204, 0, 0.75);
+    text-decoration: none;
+    transition: .4s background;
+}
+#nav ul li {
+    padding-top: 1px;
+    float: none;
+}
+#nav ul a {
+    white-space: nowrap;
+    display: block;
+}
+#nav li:hover a {
+    background: #7e0000;
+    text-decoration: underline;
+}
+#menu {
+    color: black;
+    padding: 10px; /* Поля вокруг текста */
+    font-size: 25pt;
+    text-align: center;
+
+}
+#bron {
+    padding: 10px; /* Поля вокруг текста */
+    font-size: 25pt;
+    text-align: center;
+
+}
+#gotovim {
+    font-size: 20pt;
+}
+input:invalid {
+    border: 2px dashed red;
+}
+
+    input:invalid:required {
+        background-image: linear-gradient(to right, pink, lightgreen);
+    }
+
+input:valid {
+    border: 2px solid black;
+}

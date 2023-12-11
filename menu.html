@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NAR</title>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <script>
+        function srec(obj) {
+            obj.res.value = obj.vin.value * 3
+        }
+        document.write('f', s);
+
+    </script>
+    <div id="container">
+        <div id="headers">
+            <div id="header1">NAR</div>
+            <div id="header2">Здесь вы сможете получить удовольствие от еды</div>
+        </div>
+
+        <nav class="sidebar" role="navigation">
+            <div id="nav" class="sidebar">
+                <ul class="nav">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="blog.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <section id="content">
+        <div id="banner">
+            <h4>Меню</h4>
+        </div>
+
+        <section class="menu">
+            <div class="container">
+                <img src="static/images/breakfast_menu.jpg" alt="Breakfast">
+            </div>
+            <div class="content">
+                <h2>Завтрак</h2>
+            </div>
+
+            <img src="static/images/lunch_menu.jpg" alt="lunch">
+
+            <div class="content">
+                <h2>Обед</h2>
+            </div>
+
+            <img src="static/images/dinner_menu.jpg" alt="dinner">
+
+            <div class="content">
+                <h2>Ужин</h2>
+            </div>
+        </section>
+    </section>
+
+    <div class="heading">
+        <script>
+            age = prompt('Введите ваш возраст')
+            function whoAreYou(age) {
+                if (age > 60) return 'Вы пенсионер'
+                if (age > 18) return 'Вы молодой'
+                if (age > 12) return 'Вы малыш'
+                return 'Вы ребёнок'
+            }
+            alert(whoAreYou(age))
+        </script>
+
+        <h2>Расчет алкоголя</h2>
+
+        <form name="form1">
+            Сколько человек: <input type="text" size=1 name="vin" onchange="srec(form1)"><hr>
+            Сколько литров потребуется: <input type="text" size=1 name="res"><hr>
+            <input type="button" value=Отправить onclick="care(document.form1.st1.value, document.form1.st2.value)">
+        </form>
+        <form>
+            <label for="choose">Какой алкоголь Вы предпочитаете?</label>
+            <input id="choose" name="i_like" required />
+            <button>Отправить</button>
+        </form>
+    </div>
+</body>
+</html>

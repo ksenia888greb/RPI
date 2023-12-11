@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NAR</title>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <div id="headers">
+            <div id="header1">NAR</div>
+            <div id="header2">Здесь вы сможете получить удовольствие от еды</div>
+        </div>
+
+        <nav class="sidebar" role="navigation">
+            <div id="nav" class="sidebar">
+                <ul class="nav">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="blog.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="content">
+        <div class="gotovim">
+            <div id="banner">
+                <h4>Ресторан "Nar"</h4>
+            </div>
+            <h4>Готовим вкусно для вас</h4>
+            <h4>Вы можете позвонить нам по телефону:</h4>
+            <h5>+8 999 99 99 999</h5>
+            <h4> или </h4>
+            <div class="primary-white-button">
+                <a href="#" class="gotovim" data-id="book-table">Заказать сейчас</a>
+            </div>
+        </div>
+    </div>
+    <div id="menu">
+        <a href="menu.html">
+            <img src="static/images/cook_breakfast.png" alt="Breakfast">
+            <h4>Завтрак</h4>
+        </a>
+    </div>
+    <div id="menu">
+        <a href="menu.html">
+            <img src="static/images/cook_lunch.png" alt="Lunch">
+            <h4>Обед</h4>
+        </a>
+    </div>
+    <div id="menu">
+        <a href="menu.html">
+            <img src="static/images/cook_dinner.png" alt="Dinner">
+            <h4>Ужин</h4>
+        </a>
+    </div>
+    <div id="menu">
+        <a href="menu.html">
+            <img src="static/images/cook_dessert.png" alt="Desserts">
+            <h4>Десерты</h4>
+        </a>
+    </div>
+
+        <div class="heading">
+            <h2>Забронировать столик сейчас</h2>
+        </div>
+
+    <div class="bron">
+            <h4>БРОНИРОВАНИЕ</h4>
+                        <fieldset>
+                            <select required name='день' onchange='this.form.()'>
+                                <option value="">Выберите день</option>
+                                <option value="Понедельник">Понедельник</option>
+                                <option value="Вторник">Вторник</option>
+                                <option value="Среда">Среда</option>
+                                <option value="Четверг">Четверг</option>
+                                <option value="Пятница">Пятница</option>
+                                <option value="Суббота">Суббота</option>
+                                <option value="Воскресенье">Воскресенье</option>
+                            </select>
+                        </fieldset>
+                 
+                        <fieldset>
+                            <select required name='час' onchange='this.form.()'>
+                                <option value="">Выберите час</option>
+                                <option value="10-00">10:00</option>
+                                <option value="12-00">12:00</option>
+                                <option value="14-00">14:00</option>
+                                <option value="16-00">16:00</option>
+                                <option value="18-00">18:00</option>
+                                <option value="20-00">20:00</option>
+                                <option value="22-00">22:00</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <input name="name" type="name" class="form-control" id="name" placeholder="Полное имя" required="">
+                        </fieldset>
+
+                        <fieldset>
+                            <input name="phone" type="phone" class="form-control" id="phone" placeholder="Номер телефона" required="">
+                        </fieldset>
+
+                        <fieldset>
+                            <select required class="person" name='persons' onchange='this.form.()'>
+                                <option value="">Сколько человек?</option>
+                                <option value="1-Человек">1 </option>
+                                <option value="2-Человека">2 </option>
+                                <option value="3-Человека">3 </option>
+                                <option value="4-Человека">4 </option>
+                                <option value="5-Человек">5 </option>
+                                <option value="6-Человек">6 </option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <button type="submit" id="form-submit" class="btn">Забронировать</button>
+                        </fieldset>
+                    </div>
+
+    <div id="footer">&copy; Ксения Гребенюк</div>
+</body>
+</html>
